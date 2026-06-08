@@ -464,3 +464,31 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible,
     color: var(--primary);
   }
 }
+
+
+/* Natural venue polish: Kalytero — busy seaside poster board, not rounded cards */
+.site { --button-radius: 4px; --card-radius: 0; --input-radius: 2px; --nav-radius: 0; }
+.theme-kalytero { background: #fff4c7; background-image: linear-gradient(rgba(38,19,11,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(38,19,11,.07) 1px, transparent 1px); background-size: 26px 26px; }
+.theme-kalytero .topbar { position: static; border: 3px solid #26130b; border-width: 0 0 3px; border-radius: 0; background: #fff4c7; box-shadow: none; padding-inline: 0; }
+.theme-kalytero .brand { transform: rotate(-1deg); }
+.theme-kalytero .nav-links a { border-radius: 0; border-left: 2px solid #26130b; color: #26130b; min-height: 36px; }
+.theme-kalytero .nav-links a:hover { background: #f15124; color: #fff4c7; }
+.theme-kalytero .hero { grid-template-columns: 1.25fr .75fr; gap: 32px; align-items: stretch; }
+.theme-kalytero h1 { font-size: clamp(3.4rem, 9vw, 8.8rem); text-transform: uppercase; line-height: .82; }
+.theme-kalytero .hero-copy { border: 4px solid #26130b; border-width: 4px 0; padding: 28px 0; }
+.theme-kalytero .hero-panel { border-radius: 0; border: 4px solid #26130b; box-shadow: 10px 10px 0 #f15124; transform: rotate(1.4deg); min-height: 480px; }
+.theme-kalytero .hero-card { border-radius: 0; right: 0; bottom: 0; width: 100%; border: 0; border-top: 4px solid #26130b; background: #f4b018; box-shadow: none; backdrop-filter: none; }
+.theme-kalytero .button { border: 2px solid #26130b; border-radius: 2px; min-height: 46px; box-shadow: 4px 4px 0 #26130b; text-transform: uppercase; }
+.theme-kalytero .button:hover { transform: translate(-1px,-1px); box-shadow: 6px 6px 0 #26130b; }
+.theme-kalytero .button.primary { background: #f15124; color: #fff4c7; }
+.theme-kalytero .button.ghost { background: #fff4c7; }
+.theme-kalytero .story-grid { grid-template-columns: repeat(2,1fr); gap: 0; border: 3px solid #26130b; border-width: 3px 0; }
+.theme-kalytero .story-grid article, .theme-kalytero .form-card, .theme-kalytero .menu-item, .theme-kalytero .visit { border-radius: 0; box-shadow: none; border: 2px solid #26130b; background: #fff8df; }
+.theme-kalytero .story-grid article { border-width: 0 2px 0 0; }
+.theme-kalytero .menu-list { grid-template-columns: repeat(2,1fr); gap: 0; border: 3px solid #26130b; }
+.theme-kalytero .menu-item { min-height: 155px; border-width: 0 2px 2px 0; }
+.theme-kalytero .chips { gap: 6px; }
+.theme-kalytero .chip { border-radius: 0; border: 2px solid #26130b; background: #fff8df; min-height: 38px; }
+.theme-kalytero .chip.active,.theme-kalytero .chip:hover { background: #26130b; color: #fff4c7; }
+.theme-kalytero input,.theme-kalytero select,.theme-kalytero textarea { border-radius: 0; border: 2px solid #26130b; background: #fff8df; }
+
